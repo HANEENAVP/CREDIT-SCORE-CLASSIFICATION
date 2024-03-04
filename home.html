@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Score Classification and Loan Eligibility</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body background="/static/image/background1.jpg">
+    <div class = "input form">
+      <form action="{{url_for('predict')}}" method="post" id="input head">
+        <h1 id="heading">Enter Customer Details:</h1>
+        <div class="">
+            <div class="">
+                <label for="age" class="">Age</label>
+                <input type="text" id="age" name="age" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="annual_income" class="">Annual Income</label>
+                <input type="text" id="annual_income" name="annual_income" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="monthly_inhand_salary" class="">Monthly Inhand Salary</label>
+                <input type="text" id="monthly_inhand_salary" name="monthly_inhand_salary" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="num_bank_accounts" class="">Number of Bank Accounts</label>
+                <input type="text" id="num_bank_accounts" name="num_bank_accounts" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="num_credit_card" class="">Number of Credit Cards</label>
+                <input type="text" id="num_credit_card" name="num_credit_card" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="num_of_loan" class="">Number of Loans</label>
+                <input type="text" id="num_of_loan" name="num_of_loan" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="delay_from_due_date" class="">Delay from Due Date</label>
+                <input type="text" id="delay_from_due_date" name="delay_from_due_date" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="num_of_delayed_payment" class="">Number of Delayed Payments</label>
+                <input type="text" id="num_of_delayed_payment" name="num_of_delayed_payment" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="num_credit_inquiries" class="">Number of Credit Inquiries</label>
+                <input type="text" id="num_credit_inquiries" name="num_credit_inquiries" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="outstanding_debt" class="">Outstanding Debt</label>
+                <input type="text" id="outstanding_debt" name="outstanding_debt" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="total_emi_per_month" class="">Total EMI per Month</label>
+                <input type="text" id="total_emi_per_month" name="total_emi_per_month" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="amount_invested_monthly" class="">Amount Invested Monthly</label>
+                <input type="text" id="amount_invested_monthly" name="amount_invested_monthly" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="monthly_balance" class="">Monthly Balance</label>
+                <input type="text" id="monthly_balance" name="monthly_balance" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="occupation" class="">Occupation</label>
+                <input type="text" id="occupation" name="occupation" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="credit_mix" class="">Credit Mix </label>
+                <input type="text" id="credit_mix" name="credit_mix" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="payment_of_min_amount" class="">Payment of Min Amount</label>
+                <input type="text" id="payment_of_min_amount" name="payment_of_min_amount" class="" />
+            </div>
+            <br>
+            <div class="">
+                <label for="payment_behaviour" class="">Payment Behaviour </label>
+                <input type="text" id="payment_behaviour" name="payment_behaviour" class="" />
+            </div>
+            <br>
+        </div>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+       
+    </div>
+    
+</body>
+</html>
